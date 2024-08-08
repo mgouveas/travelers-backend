@@ -24,3 +24,5 @@ class TripsRepository:
             )
         )
         self.__conn.commit()
+
+    
