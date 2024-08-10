@@ -6,7 +6,7 @@ class DbConnectionHandler:
         self.__connection_string = "storage.db"
         self.__conn = None
 
-    def connection(self) -> None:
+    def connect(self) -> None:
         conn = sqlite3.connect(self.__connection_string, check_same_thread=False)
         self.__conn = conn
 
