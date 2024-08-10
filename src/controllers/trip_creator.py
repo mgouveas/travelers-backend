@@ -20,7 +20,7 @@ class TripCreator:
                     self.__emails_repository.registry_email({
                         "email": email,
                         "trip_id": trip_id,
-                        "id_email": str(uuid.uuid4())
+                        "id": str(uuid.uuid4())
                     })
             
             return {
