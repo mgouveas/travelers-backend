@@ -7,15 +7,15 @@ class TripFinder:
     def find_trip_details(self, trip_id) -> Dict:
         try:
             trip = self.__trips_repository.find_trip_by_id(trip_id)
-            if not trip: raise Exception("No Tripo Found")
+            if not trip: raise Exception("No Trip Found")
 
             return{
                 "body": {
                     "trip": {
                         "id": trip[0],
                         "destination": trip[1],
-                        "start_at": trip[2],
-                        "end_at": trip[3],
+                        "starts_at": trip[2],
+                        "ends_at": trip[3],
                         "status": trip[6]
                     }
                 },
